@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/appusers2</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">Root@123</property>
+        <property name="hbm2ddl.auto">update</property>
+
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- Optional settings -->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+
+<!--        <mapping class="com.jspiders.project.bms.Movie"/>-->
+        <mapping class="com.jspiders.project.bms.main.Audi"/>
+        <mapping class="com.jspiders.project.bms.main.Address"/>
+    </session-factory>
+</hibernate-configuration>

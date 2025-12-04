@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.jspiders.demo.Users" table="Users">
+        <id name="userid" column="userid">
+            <generator class="identity"></generator>
+        </id>
+        <property name="name" column="name"/>
+        <property name="mobile" column="mobile"/>
+        <property name="password" column="password"/>
+    </class>
+
+</hibernate-mapping>
