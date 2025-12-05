@@ -32,7 +32,6 @@ public class HQLDemo {
         session.close();
         System.out.println("Session closed");
         //close session factory
-        sessionFactory.close();
         System.out.println("SessionFactory closed");
 
 
