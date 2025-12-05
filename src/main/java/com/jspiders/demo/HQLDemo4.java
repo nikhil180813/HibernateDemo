@@ -66,6 +66,8 @@ public class HQLDemo4 {
         //close session factory
         sessionFactory.close();
         System.out.println("SessionFactory closed");
+        System.out.println("Program ends...");
+
 
 
         System.out.println("Program ends...");
