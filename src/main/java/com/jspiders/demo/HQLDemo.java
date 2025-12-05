@@ -21,7 +21,7 @@ public class HQLDemo {
         Session session = sessionFactory.openSession();//connect to db
         System.out.println("Session created");
 
-        String selectUsersByName_HQL = "FROM Users usr WHERE usr.name = 'user1'";
+        String selectUsersByName_HQL = "FROM Users usr WHERE usr.name = 'putty'";
 
         Query<Users> query = session.createQuery(selectUsersByName_HQL, Users.class);
         Users users = query.uniqueResult();
